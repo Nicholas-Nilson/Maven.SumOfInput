@@ -2,14 +2,18 @@ import java.util.Scanner;
 
 public class numSummer {
 
-//    int incrementedNumber = 1;
-//    int sumTotal = 0;
-//    int userNumber;
+    int incrementedNumber = 1;
+    int sumTotal = 0;
+    int userNumber = 0;
 
-    public static int summing (int incrementedNumber, int sumTotal, int userNumber) {
+    public int summing() {
+        while (incrementedNumber <= userNumber) {
+            sumTotal = sumTotal + incrementedNumber;
+            incrementedNumber++;
+        }
+        return sumTotal;
 
-
-    }
+        //copied from original attempt when all the code was in Main.java
 //    int incrementedNumber = 1;
 //    int sumTotal = 0;
 //    Scanner userInput = new Scanner(System.in);
@@ -22,4 +26,5 @@ public class numSummer {
 //        incrementedNumber++;
 //    }
 //        System.out.println("Result is " + sumTotal);
+    }
 }
