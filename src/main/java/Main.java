@@ -4,13 +4,11 @@ import java.util.Scanner;
  * Created by iyasuwatts on 10/17/17.
  */
 //This program could have been written entirely with much less code, but
-    //I realize I need more practice with working with classes & objects.
-    //I also wanted to make sure an integer was entered by the user.
-    //Didn't write in a way for the program to stop if a particularly stubborn user doesn't want to enter an integer.
-    //This program only feels half complete. If a user enters a negative integer, the program doesn't iterate through negatives.
-    //To ameliorate this, I would include an if statement in the numSummer class that utilizes negative incrementation.
-    //The incremented number variable would start at 0 upon initialization.
-    // (if userNumber > 0) I would use the while loop there. (if userNumber < 0)
+//I realize I need more practice with working with classes & objects.
+//I also wanted to make sure an integer was entered by the user.
+//Didn't write in a way for the program to stop if a particularly stubborn user doesn't want to enter an integer.
+//I've also added a way to sum through negative integers in the posNeg branch.
+//this program could also have been written using for loops.
 public class Main {
 
     public static void main(String[] args) {

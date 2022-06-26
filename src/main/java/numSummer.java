@@ -2,14 +2,24 @@ import java.util.Scanner;
 
 public class numSummer {
 
-    int incrementedNumber = 1;
+    int incrementedNumber = 0;
     int sumTotal = 0;
     int userNumber = 0;
 
     public int summing() {
-        while (incrementedNumber <= userNumber) {
-            sumTotal = sumTotal + incrementedNumber;
-            incrementedNumber++;
+        if (userNumber > 0) {
+            incrementedNumber = 1;
+            while (incrementedNumber <= userNumber) {
+                sumTotal = sumTotal + incrementedNumber;
+                incrementedNumber++;
+            }
+        }
+        if (userNumber < 0) {
+            incrementedNumber = -1;
+            while (incrementedNumber >= userNumber) {
+                sumTotal = sumTotal + incrementedNumber;
+                incrementedNumber--;
+            }
         }
         return sumTotal;
 
