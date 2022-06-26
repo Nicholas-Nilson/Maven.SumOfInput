@@ -2,20 +2,18 @@ import java.util.Scanner;
 
 public class numSummer {
 
-    int incrementedNumber = 0;
+    int incrementedNumber = 1;
     int sumTotal = 0;
     int userNumber = 0;
 
     public int summing() {
         if (userNumber > 0) {
-            incrementedNumber = 1;
             while (incrementedNumber <= userNumber) {
                 sumTotal = sumTotal + incrementedNumber;
                 incrementedNumber++;
             }
         }
         if (userNumber < 0) {
-            incrementedNumber = -1;
             while (incrementedNumber >= userNumber) {
                 sumTotal = sumTotal + incrementedNumber;
                 incrementedNumber--;
